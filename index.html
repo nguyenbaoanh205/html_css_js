@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Base Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -109,7 +113,7 @@
         <section class="hero-section">
             <div class="container hero-content">
                 <div class="hero-banner">
-                    <img src="assets/images/Cambridge Scout - Revamp.png" alt="Hero Banner" class="hero-full-img">
+                    <img src="assets/images/Region - Slides.png" alt="Hero Banner" class="hero-full-img">
                     <!-- Using the full revamp image as banner or building it -->
                     <div class="hero-overlay-text">
                         <!-- Normally I'd rebuild this with HTML, but since the user has these images, I'll structure sections to match -->
@@ -119,7 +123,7 @@
         </section>
 
         <!-- Stats Counter Section -->
-        <section class="stats-section">
+        <!-- <section class="stats-section">
             <div class="container grid-6">
                 <div class="stat-item">
                     <h3>90%</h3>
@@ -146,18 +150,111 @@
                     <p>quốc gia</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Featured Courses (Khóa học nổi bật) -->
         <section class="featured-courses section-padding">
             <div class="container">
                 <h2 class="section-title">KHÓA HỌC NỔI BẬT</h2>
                 <div class="grid-5 courses-grid">
-                    <div class="course-card"><img src="assets/images/CAM.png" alt="Cambridge"></div>
-                    <div class="course-card"><img src="assets/images/IB.png" alt="IB"></div>
-                    <div class="course-card"><img src="assets/images/AP.png" alt="AP"></div>
-                    <div class="course-card"><img src="assets/images/FDTION.png" alt="Foundation"></div>
-                    <div class="course-card"><img src="assets/images/HSDH.png" alt="Hồ Sơ Du Học"></div>
+                    <div class="course-card">
+                        <!-- SVG nền -->
+                        <img src="assets/svg/Vector (1).svg" class="card-bg" alt="bg">
+
+                        <!-- Ảnh -->
+                        <img src="assets/images/image 5.png" alt="Cambridge" class="card-img">
+
+                        <!-- Text -->
+                        <div class="card-content">
+                            <div class="card-title">HỆ CHƯƠNG TRÌNH</div>
+                            <div class="card-subtitle">CAMBRIDGE</div>
+                            <div class="card-description">Học gia sư 1:1</div>
+                            <div class="card-description">Tư vấn chương trình học</div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="card-btn">
+                            <img src="assets/images/Vector (4).png" alt="Arrow">
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <!-- SVG nền -->
+                        <img src="assets/svg/Vector.svg" class="card-bg" alt="bg">
+
+                        <!-- Ảnh -->
+                        <img src="assets/images/image 3.png" alt="Cambridge" class="card-img" style="opacity: 0.9; width: 70%;">
+ 
+                        <!-- Text -->
+                        <div class="card-content">
+                            <div class="card-title-big">IB</div>
+                            <div class="card-description">Học gia sư 1:1</div>
+                            <div class="card-description">Tư vấn chương trình học</div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="card-btn">
+                            <img src="assets/images/Vector (4).png" alt="Arrow">
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <!-- SVG nền -->
+                        <img src="assets/svg/Vector (2).svg" class="card-bg" alt="bg">
+
+                        <!-- Ảnh -->
+                        <img src="assets/images/image 4.png" alt="Cambridge" class="card-img" style="opacity: 0.9; width: 78%;">
+ 
+                        <!-- Text -->
+                        <div class="card-content">
+                            <div class="card-title-big">AP</div>
+                            <div class="card-description">Học gia sư 1:1</div>
+                            <div class="card-description">Tư vấn chương trình học</div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="card-btn">
+                            <img src="assets/images/Vector (4).png" alt="Arrow">
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <img src="assets/svg/Vector (3).svg" class="card-bg" alt="bg">
+
+                        <img src="assets/images/Layer_1.png" alt="Cambridge" class="card-img" style="opacity: 0.7; width: 80%;">
+
+                        <div class="card-content">
+                            <div class="card-title">HỆ CHƯƠNG TRÌNH</div>
+                            <div class="card-subtitle">FOUNDATION</div>
+                            <div class="card-description">Học gia sư 1:1</div>
+                            <div class="card-description">Tư vấn chương trình học</div>
+                        </div>
+
+                        <div class="card-btn">
+                            <img src="assets/images/Vector (4).png" alt="Arrow">
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <!-- SVG nền -->
+                        <img src="assets/svg/Vector (4).svg" class="card-bg" alt="bg">
+
+                        <!-- Ảnh -->
+                        <img src="assets/images/Layer_1 (1).png" alt="Cambridge" class="card-img" style="opacity: 0.7; width: 71%;">
+
+                        <!-- Text -->
+                        <div class="card-content">
+                            <div class="card-title">HỆ CHƯƠNG TRÌNH</div>
+                            <div class="card-subtitle">HỒ SƠ</div>
+                            <div class="card-description">Học gia sư 1:1</div>
+                            <div class="card-description">Tư vấn chương trình học</div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="card-btn">
+                            <img src="assets/images/Vector (4).png" alt="Arrow">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

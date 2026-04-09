@@ -5,14 +5,14 @@
     --accent-blue: #00a3ff;
     --dark-navy: #002d72;
     --light-blue: #eef5ff;
-    --bg-light: #f8fbff;
+    --bg-light: #f8faff;
     --white: #ffffff;
     --text-dark: #333333;
     --text-main: #333333;
     --text-muted: #666666;
     --border-color: #dddddd;
     --transition-speed: 0.3s;
-    --container-width: 1200px;
+    --container-width: 1440px;
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
     --shadow-strong: 0 20px 40px rgba(0, 70, 184, 0.15);
     --primary-blue: #0046b8;
@@ -161,7 +161,7 @@ ul {
 .navbar {
     padding: 15px 0;
     background: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -257,7 +257,7 @@ ul {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
 }
 
 .hero-full-img {
@@ -268,10 +268,9 @@ ul {
 }
 
 /* Stats Section */
-.stats-section {
+/* .stats-section {
     background: var(--white);
     padding: 40px 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .grid-6 {
@@ -290,9 +289,12 @@ ul {
 .stat-item p {
     font-size: 0.85rem;
     color: var(--text-muted);
-}
+} */
 
 /* Course Cards */
+.featured-courses{
+    background: var(--bg-light);
+}
 .grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -300,13 +302,98 @@ ul {
 }
 
 .course-card {
-    border-radius: 12px;
+    /* border-radius: 12px;
     overflow: hidden;
-    transition: transform var(--transition-speed);
+    transition: transform var(--transition-speed); */
+    position: relative;
+   aspect-ratio: 260 / 386; /* giữ tỷ lệ */
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.course-card:hover {
+/* .course-card:hover {
     transform: scale(1.05);
+} */
+/* nền */
+.card-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* ảnh */
+.card-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 64%;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+/* text */
+.card-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 3;
+}
+
+.card-title-big{
+    font-weight: bold;
+    font-size: 5.5rem;
+    margin-top: -18px;
+    margin-bottom: -20px;
+}
+
+.card-content h4 {
+    font-size: 12px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* nút */
+.card-btn {
+    position: absolute;
+    bottom: 6px;
+    right: 5px;
+    background: #5eead4;
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.card-title{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 13px;
+    margin-bottom: -3px;
+}
+
+.card-subtitle{
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-bottom: 13px;
+}
+
+.card-description{
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    padding: 3px 0;
 }
 
 /* Support Banner */
