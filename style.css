@@ -789,8 +789,8 @@ ul {
 }
 
 .swiper {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 100%;
   padding: 20px 0 50px;
 }
 
@@ -819,7 +819,7 @@ ul {
 .section-testimonial-title{
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
