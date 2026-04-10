@@ -147,31 +147,33 @@ var successSwiper = new Swiper(".successSwiper", {
 });
 
 const destinationSwiper = new Swiper(".destinationSwiper", {
-  loop: true,
-  speed: 800,
-  spaceBetween: 20,
-  slidesPerView: 4.3,
-  grabCursor: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.3,
-      spaceBetween: 6
+    loop: true,
+    speed: 800,
+    spaceBetween: 20,
+    slidesPerView: 4.3,
+    grabCursor: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
     },
-    576: {
-      slidesPerView: 2.6,
-      spaceBetween: 6
-    },
-    768: {
-      slidesPerView: 3.2,
-      spaceBetween: 16
-    },
-    992: {
-      slidesPerView: 4.3,
-      spaceBetween: 20
+    breakpoints: {
+        0: {
+            slidesPerView: 1.3,
+            spaceBetween: 6,
+            loop: false,
+        },
+        576: {
+            slidesPerView: 2.6,
+            spaceBetween: 6,
+            loop: false,
+        },
+        768: {
+            slidesPerView: 3.2,
+            spaceBetween: 16
+        },
+        992: {
+            slidesPerView: 4.3,
+            spaceBetween: 20
+        }
     }
-  }
 });
