@@ -99,10 +99,10 @@ ul {
     transition: background var(--transition-speed), transform 0.2s;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
     background: var(--secondary-blue);
     transform: translateY(-2px);
-}
+} */
 
 .btn-outline {
     border: 2px solid var(--primary-navy);
@@ -183,9 +183,9 @@ ul {
     font-size: 0.75rem;
 }
 
-.nav-links a:hover {
+/* .nav-links a:hover {
     color: var(--primary-navy);
-}
+} */
 
 .nav-links li {
     position: relative;
@@ -576,13 +576,10 @@ ul {
     width: 250px;
     height: 420px;
     flex-shrink: 0;
-    /* không bị co lại */
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-
     scroll-snap-align: start;
-    /* snap từng card */
 }
 
 .student-image {
@@ -708,7 +705,32 @@ ul {
 }
 
 .successSwiper {
-    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.successSwiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(255,255,255,0), #fff 80%);
+}
+
+@media (max-width: 1023px) {
+    .successSwiper::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .successSwiper::after {
+        width: 40px;
+    }
 }
 
 .successSwiper .swiper-slide {

@@ -107,10 +107,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var successSwiper = new Swiper(".successSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
     loop: true,
     speed: 700,
+    spaceBetween: 16,
 
     autoplay: {
         delay: 2500,
@@ -123,17 +122,26 @@ var successSwiper = new Swiper(".successSwiper", {
         clickable: true,
     },
 
-    navigation: false, // hoặc bỏ luôn cũng được
-
     breakpoints: {
-        640: {
-            slidesPerView: 2,
+        0: {
+            slidesPerView: 1.15,
+            spaceBetween: 12,
+        },
+        576: {
+            slidesPerView: 2.2,
+            spaceBetween: 14,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 3.2,
+            spaceBetween: 16,
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 4.2,
+            spaceBetween: 16,
+        },
+        1400: {
+            slidesPerView: 5.3,
+            spaceBetween: 20,
         },
     },
 });
