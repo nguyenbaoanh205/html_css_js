@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
@@ -736,8 +736,8 @@ ul {
 
 @media (max-width: 768px) {
     .successSwiper .swiper-pagination {
-    text-align: center;
-}
+        text-align: center;
+    }
 }
 
 /* Contact Section */
@@ -1012,6 +1012,153 @@ ul {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Blog & event */
+.edu-news {
+    padding: 40px 0;
+    background: #f7f9fc;
+    min-height: 660px;
+
+}
+
+/* .edu-news__container {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+/* .edu-news__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+} */
+
+.edu-news__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* trái to hơn phải */
+    gap: 24px;
+}
+
+/* MAIN */
+.edu-news__main {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.edu-news__main img {
+    width: 100%;
+    display: block;
+}
+
+.edu-news__main-content {
+    padding: 16px;
+}
+
+.edu-news__tag {
+    font-size: 12px;
+    color: #1a37ae;
+    font-weight: 600;
+}
+
+.edu-news__main h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.edu-news__main p {
+    font-size: 14px;
+    color: #555;
+}
+
+.edu-news__btn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* SIDE */
+.edu-news__side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.edu-news__card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.edu-news__card img {
+    width: 100%;
+    display: block;
+}
+
+.edu-news__card p {
+    font-size: 13px;
+    padding: 16px;
+}
+
+/* .edu-news__card span {
+  padding: 8px;
+} */
+.edu-news__main-content-tags {
+    list-style: disc;
+    padding: 0 20px;
+}
+
+.edu-news__main-content-tags-2 {
+    margin: 0 12px;
+    padding-top: 10px;
+    margin-bottom: -11px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .edu-news__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-news__side {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .edu-news {
+        min-height: unset;
+        /* QUAN TRỌNG */
+        padding: 24px 16px;
+    }
+
+    .edu-news__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .edu-news__side {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-news__main img {
+        height: auto;
+    }
+
+    .edu-news__card img {
+        height: auto;
+    }
+}
+
 
 /* Footer */
 .main-footer {
