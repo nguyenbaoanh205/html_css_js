@@ -1163,7 +1163,13 @@ ul {
 /* Footer */
 /* Footer */
 .main-footer {
-  background: linear-gradient(135deg, #1e3a8a, #60a5fa);
+  background: linear-gradient(
+    135deg,
+    #1a37ae 25%,   /* màu 1 */
+    #9db8ff 80%,  /* màu 2 */
+    #b8feff 100%  /* màu 3 */
+  );
+
   color: #fff;
   padding: 80px 0 30px;
   position: relative;
@@ -1175,8 +1181,8 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://www.transparenttextures.com/patterns/cubes.png");
-  opacity: 0.1;
+  background: url("assets/images/Image (1).png") center/cover no-repeat;
+  opacity: 0.2;
 }
 
 /* layout */
