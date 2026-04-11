@@ -485,16 +485,14 @@ ul {
 /* Support Banner */
 /* ===== SECTION ===== */
 .support-banner {
-    background:
-        linear-gradient(rgb(2 32 151 / 80%), #1a37ae),
-        url('assets/images/Image.png');
+    background: linear-gradient(rgb(0 50 173 / 100%), #1a37ae), url(assets/images/Image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     padding: 80px 0;
+    background-blend-mode: multiply;
 }
-
 .support-banner-title {
     width: 80%;
     margin: 0 auto;
@@ -521,7 +519,7 @@ ul {
 
 .support-card--featured {
     max-width: 430px;
-    aspect-ratio: 430 / 445;
+    aspect-ratio: 430 / 451;
     transform: scale(1.05);
     z-index: 2;
 }
@@ -617,7 +615,7 @@ ul {
 
     .support-card--featured {
         aspect-ratio: auto;
-        min-height: 455px;
+        min-height: 451px;
         transform: none;
         overflow: hidden;
     }
@@ -1201,7 +1199,7 @@ ul {
 /* Gallery */
 .testimonial-section {
     background-color: #0032AD;
-    padding: 60px 0;
+    padding: 55px 0;
     color: #fff;
     font-family: Arial, sans-serif;
 }
@@ -1216,7 +1214,7 @@ ul {
 .swiper {
     width: 100%;
     max-width: 100%;
-    padding: 40px 0 0;
+    padding-bottom: 45px;
 }
 
 .swiper-slide {
@@ -1402,28 +1400,22 @@ ul {
 /* Footer */
 /* Footer */
 .main-footer {
-    background: linear-gradient(135deg,
-            #1a37ae 25%,
-            /* màu 1 */
-            #9db8ff 80%,
-            /* màu 2 */
-            #b8feff 100%
-            /* màu 3 */
-        );
+    background:
+        linear-gradient(135deg,
+            #0032aded 30%,
+            #97B7FF 70%,
+            #ABFFFF 95%
+        ),
+        url("assets/images/Image (1).png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-blend-mode: multiply; /* giống banner */
 
     color: #fff;
     padding: 80px 0 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* fake polygon background */
-.main-footer::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("assets/images/Image (1).png") center/cover no-repeat;
-    opacity: 0.2;
 }
 
 /* layout */
@@ -1440,7 +1432,7 @@ ul {
 
 /* BRAND */
 .footer-logo {
-    height: 50px;
+    height: 75px;
     margin-bottom: 16px;
 }
 
@@ -1479,6 +1471,15 @@ ul {
     letter-spacing: 0.5px;
 }
 
+.footer-links h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: 7px 0;
+}
+
 /* LINKS */
 .footer-links ul {
     padding: 0;
@@ -1505,6 +1506,7 @@ ul {
 .social-links {
     display: flex;
     gap: 12px;
+    margin-top: 15px;
 }
 
 .social-links a {
