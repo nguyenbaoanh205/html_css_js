@@ -343,10 +343,11 @@ ul {
 
 
 .card-title-big {
-    font-size: 4em;
+    font-size: 4.4em;
     font-weight: 700;
     line-height: 0.9;
     color: #fff;
+    padding-bottom: 16%;
 }
 
 .card-content h4 {
@@ -377,16 +378,17 @@ ul {
 }
 
 .card-title {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 300;
     color: #fff;
 }
 
 
 .card-subtitle {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 600;
     color: #fff;
+    padding-bottom: 12%;
 }
 
 .card-description {
@@ -417,7 +419,7 @@ ul {
 
     /* subtitle */
     .card-subtitle {
-        font-size: 3rem;
+        font-size: 2.8rem;
         padding-bottom: 2%;
     }
 
