@@ -111,12 +111,25 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container hero-content">
-                <div class="hero-banner">
-                    <img src="assets/images/Region - Slides.png" alt="Hero Banner" class="hero-full-img">
-                    <!-- Using the full revamp image as banner or building it -->
-                    <div class="hero-overlay-text">
-                        <!-- Normally I'd rebuild this with HTML, but since the user has these images, I'll structure sections to match -->
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/Region - Slides.png" alt="Hero Banner 1" class="hero-full-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Region - Slides.png" alt="Hero Banner 2" class="hero-full-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Region - Slides.png" alt="Hero Banner 3" class="hero-full-img">
+                        </div>
                     </div>
+
+                    <!-- Nút điều hướng -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>

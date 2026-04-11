@@ -78,6 +78,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+    const heroSwiper = new Swiper(".heroSwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".heroSwiper .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".heroSwiper .swiper-button-next",
+            prevEl: ".heroSwiper .swiper-button-prev",
+        },
+    });
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1, // Mặc định mobile 1 ảnh
     spaceBetween: 30,
