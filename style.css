@@ -299,18 +299,16 @@ ul {
 .grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: clamp(12px, 1.5vw, 20px);
 }
 
 .course-card {
-    /* border-radius: 12px;
-    overflow: hidden;
-    transition: transform var(--transition-speed); */
     position: relative;
+    width: 100%;
     aspect-ratio: 260 / 386;
-    /* giữ tỷ lệ */
     border-radius: 20px;
     overflow: hidden;
+    font-size: clamp(10px, 1vw, 16px);
 }
 
 /* .course-card:hover {
@@ -323,7 +321,6 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 }
 
 /* ảnh */
@@ -333,23 +330,23 @@ ul {
     left: 0;
     width: 64%;
     opacity: 0.4;
-    z-index: 2;
+    border-radius: 14%;
 }
 
 /* text */
 .card-content {
     position: relative;
-    z-index: 2;
-    padding: 20px;
+    padding: clamp(14px, 1.5vw, 20px);
     height: 100%;
+    z-index: 2;
 }
 
+
 .card-title-big {
-    font-weight: bold;
-    font-size: 5.5rem;
-    margin-top: -18px;
-    margin-bottom: -20px;
-    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 0.9;
+    color: #fff;
 }
 
 .card-content h4 {
@@ -364,77 +361,110 @@ ul {
 /* nút */
 .card-btn {
     position: absolute;
-    bottom: 6px;
-    right: 5px;
+    bottom: 2px;
+    right: 3px;
+    width: 25%;
+    height: 17%;
     background: #5eead4;
-    width: 65px;
-    height: 65px;
-    border-radius: 12px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+}
+
+.card-btn img {
+    width: clamp(16px, 2vw, 28px);
 }
 
 .card-title {
-    font-size: 1.3rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
     font-weight: 300;
-    padding-top: 13px;
-    margin-bottom: -3px;
-    color: #ffffff;
+    color: #fff;
 }
 
+
 .card-subtitle {
-    font-size: 1.9rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
     font-weight: 600;
-    padding-bottom: 13px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .card-description {
-    font-size: 0.9rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    padding: 3px 0;
-    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #fff;
 }
 
-@media (max-width: 768px) {
-    /* giảm padding */
+/* TABLET */
+@media (max-width: 990px) {
     .card-content {
-        padding: 16px;
+        padding: 34px;
     }
 
     /* chữ lớn (IB, AP...) */
     .card-title-big {
-        font-size: 6.2rem;
-        margin-top: -10px;
-        margin-bottom: -10px;
+        font-size: 11vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        padding-bottom: 10%;
     }
 
     /* title nhỏ */
     .card-title {
-        font-size: 2rem;
+        font-size: 3.7vw;
         padding-top: 8px;
     }
 
     /* subtitle */
     .card-subtitle {
-        font-size: 2.8rem;
-        padding-bottom: 8px;
+        font-size: 3rem;
+        padding-bottom: 2%;
     }
 
     /* description */
     .card-description {
         font-size: 1.3rem;
+        line-height: 1.8;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* giảm padding */
+    .card-content {
+        padding: 30px;
+    }
+
+    /* chữ lớn (IB, AP...) */
+    .card-title-big {
+        font-size: 24vw;
+        /* margin-top: -10px;
+        margin-bottom: -10px; */
+        padding-top: 26px;
+    }
+
+    /* title nhỏ */
+    .card-title {
+        font-size: 8vw;
+        padding-top: 26px;
+    }
+
+    /* subtitle */
+    .card-subtitle {
+        font-size: 11vw;
+        padding-bottom: 8%;
+    }
+
+    /* description */
+    .card-description {
+        font-size: 4.5vw;
         line-height: 1.4;
     }
 
     /* ảnh cho gọn lại */
     .card-img {
-        width: 70%;
+        width: 65%;
         opacity: 0.5;
     }
 
@@ -466,7 +496,7 @@ ul {
 }
 
 .support-banner-title {
-    font-size: 2.5rem;
+    font-size: 2vw;
     margin-bottom: 50px;
     line-height: 1.4;
 }
@@ -526,7 +556,6 @@ ul {
 .support-card-heading {
     margin: 0;
     font-size: 2.1rem;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-align: left;
 }
@@ -554,7 +583,6 @@ ul {
     width: 40%;
     transition: 0.3s;
     font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
@@ -827,7 +855,7 @@ ul {
 } */
 
 @media (max-width: 767px) {
-    .swiper-slide-1{
+    .swiper-slide-1 {
         width: 80% !important;
         margin-right: -30px !important;
     }
@@ -960,13 +988,11 @@ ul {
     color: #1a37ae;
     font-size: 2rem;
     margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .destination-desc {
     color: #555;
     line-height: 1.6;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* RIGHT */
@@ -1041,9 +1067,10 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .swiper{
+    .swiper {
         padding: 10px 0px;
     }
+
     .destination-section .container {
         flex-direction: column;
         text-align: center;
@@ -1054,7 +1081,7 @@ ul {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    
+
     .destinationSwiper .swiper-slide {
         height: auto;
         width: 57% !important;
