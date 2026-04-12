@@ -4,6 +4,7 @@
     --secondary-blue: #0056b3;
     --accent-blue: #00a3ff;
     --dark-navy: #002d72;
+    --dark: #000;
     --light-blue: #eef5ff;
     --bg-light: #f8faff;
     --white: #ffffff;
@@ -429,7 +430,7 @@ ul {
         line-height: 1.8;
     }
 
-    .card-btn{
+    .card-btn {
         border-radius: 26%;
     }
 }
@@ -1725,8 +1726,7 @@ ul {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    background: url('assets/images/Background.png') center/cover no-repeat;
-    /* Fallback */
+    background: url('assets/images/image_banner_about.jpg') center/cover no-repeat;
 }
 
 /* We will use Về Cambridge Scout as the background but with better overlay */
@@ -1737,8 +1737,10 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/images/Background.png') center/cover;
-    filter: brightness(0.6) saturate(1.2);
+
+    background:
+        linear-gradient(rgba(0, 50, 173, 0.6), rgba(0, 50, 173, 0.6)),
+        url('assets/images/image_banner_about.jpg') center/cover;
     z-index: 0;
 }
 
@@ -1751,7 +1753,6 @@ ul {
 }
 
 .hero-content-box {
-    border: 2px solid rgba(0, 163, 255, 0.6);
     padding: 60px 40px;
     position: relative;
     backdrop-filter: blur(2px);
@@ -1774,7 +1775,7 @@ ul {
 }
 
 .hero-inner h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -1782,36 +1783,39 @@ ul {
 }
 
 .title-more {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     color: #00f2ff;
     /* Neon Cyan */
     text-transform: none;
     display: block;
     margin-bottom: 30px;
+    font-weight: 800;
 }
 
 .hero-quote {
-    font-size: 1.25rem;
-    max-width: 750px;
+    font-size: 1.35rem;
+    max-width: 900px;
     margin: 0 auto;
     line-height: 1.5;
+    color: #E5E7EB;
 }
 
 /* Intro Section */
 .intro-section {
     background: var(--white);
+    padding: 65px 0;
 }
 
 .intro-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 30px;
     align-items: center;
 }
 
 .intro-content h2 {
-    font-size: 2.2rem;
-    color: var(--dark-navy);
+    font-size: 1.9rem;
+    color: var(--dark);
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 15px;
@@ -1822,7 +1826,7 @@ ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 80px;
     height: 3px;
     background: var(--primary-blue);
 }
@@ -1833,7 +1837,7 @@ ul {
 }
 
 .mission-box {
-    background: var(--bg-light);
+    background: #f0f6ff;
     border-left: 4px solid var(--primary-blue);
     padding: 30px;
     margin-top: 40px;
@@ -1845,36 +1849,48 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--primary-blue);
+    color: var(--dark);
     margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.icon_1 {
+    color: #1a37ae;
 }
 
 .intro-image {
     position: relative;
+    z-index: 0;
+    padding: 0 36px 34px 0;
 }
 
 .intro-image img {
+    position: relative;
+    z-index: 1;
     border-radius: 20px;
     box-shadow: var(--shadow-strong);
-    width: 100%;
+    width: 96%;
 }
 
 .intro-image::after {
     content: '';
     position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 60%;
-    height: 60%;
-    background: var(--primary-blue);
+    right: 0;
+    bottom: -16px;
+    width: 83%;
+    height: 85%;
+    background: linear-gradient(135deg, #1b3fd1 0%, var(--primary-blue) 100%);
+    border-radius: 18px;
     z-index: -1;
-    border-radius: 20px;
-    opacity: 0.1;
 }
 
 /* Expert Cards */
 .expert-section {
-    background: var(--bg-light);
+    background: #f9fafb;
+}
+
+.padding-tp {
+    padding: 60px 0px;
 }
 
 .expert-grid {
@@ -2059,5 +2075,21 @@ ul {
 
     .hero-inner h1 {
         font-size: 2.5rem;
+    }
+
+    .intro-image {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-image {
+        padding: 0 20px 22px 0;
+    }
+
+    .intro-image::after {
+        width: 74%;
+        height: 38%;
     }
 }
